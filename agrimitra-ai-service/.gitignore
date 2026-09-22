@@ -1,0 +1,32 @@
+# --- Node.js (backend/) ---
+backend/node_modules/
+backend/.env
+backend/uploads/crop-images/*
+!backend/uploads/crop-images/.gitkeep
+backend/npm-debug.log*
+
+# --- Python (ai-service/) ---
+ai-service/venv/
+ai-service/__pycache__/
+ai-service/**/__pycache__/
+ai-service/.env.local
+ai-service/*.pyc
+
+# Trained model weights and large artifacts are not committed by default;
+# remove these lines once you intend to version-control real trained models.
+ai-service/models/**/*.h5
+ai-service/models/**/*.pkl
+ai-service/models/**/*.pt
+
+# Datasets are expected to be large and/or licensed separately.
+ai-service/dataset/**/*.jpg
+ai-service/dataset/**/*.jpeg
+ai-service/dataset/**/*.png
+ai-service/dataset/**/*.csv
+!ai-service/dataset/**/README.md
+
+# --- General ---
+.DS_Store
+*.log
+.vscode/
+.idea/
