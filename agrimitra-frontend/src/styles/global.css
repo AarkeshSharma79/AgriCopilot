@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  body {
+    @apply bg-sand text-forest-950 antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Sora", system-ui, sans-serif;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cfe4d1;
+    border-radius: 999px;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-forest-950/5 p-5;
+  }
+  .card-title {
+    @apply text-sm font-semibold text-forest-950;
+  }
+  .card-subtitle {
+    @apply text-xs text-forest-950/50;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-forest-700 text-white text-sm font-medium px-4 py-2.5 hover:bg-forest-800 transition-colors;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-leaf-50 text-forest-700 text-sm font-medium px-4 py-2.5 hover:bg-leaf-100 transition-colors;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium;
+  }
+}

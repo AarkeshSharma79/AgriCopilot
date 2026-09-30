@@ -1,0 +1,9 @@
+.field-zone-high {
+  background: repeating-linear-gradient(135deg, #5fb868, #5fb868 6px, #4fa759 6px, #4fa759 12px);
+}
+.field-zone-medium {
+  background: repeating-linear-gradient(135deg, #f0a93b, #f0a93b 6px, #e69b26 6px, #e69b26 12px);
+}
+.field-zone-low {
+  background: repeating-linear-gradient(135deg, #e8664b, #e8664b 6px, #dc4f32 6px, #dc4f32 12px);
+}
