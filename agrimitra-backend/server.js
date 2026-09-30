@@ -19,6 +19,7 @@ import alertRoutes from './routes/alertRoutes.js';
 import reportsRoutes from './routes/reportsRoutes.js';
 import organicRoutes from './routes/organicRoutes.js';
 import precisionRoutes from './routes/precisionRoutes.js';
+import farmerChatRoutes from './routes/farmerChat.js';
 
 import { analyzeCropImageController, getCropHealthOverviewController } from './controllers/cropController.js';
 import { getSoilHealth } from './controllers/soilController.js';
@@ -62,6 +63,7 @@ app.use('/api/alerts', alertRoutes);
 app.use('/api/reports', reportsRoutes);
 app.use('/api/organic', organicRoutes);
 app.use('/api/precision', precisionRoutes);
+app.use('/api/farmer-chat', farmerChatRoutes);
 
 // --- Convenience / Legacy Frontend Compatibility Route Aliases ---
 app.get('/api/farms/:farmId/crop-health', getCropHealthOverviewController);
